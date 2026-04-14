@@ -3,7 +3,7 @@
     - time : 25 minutes
     - iterations : 1
     - quality : ok
-      
+
   COPILOT
     - time : 10 minutes
     - iterations : 6
