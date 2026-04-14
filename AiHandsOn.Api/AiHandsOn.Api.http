@@ -1,0 +1,6 @@
+@AiHandsOn.Api_HostAddress = http://localhost:5125
+
+GET {{AiHandsOn.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
