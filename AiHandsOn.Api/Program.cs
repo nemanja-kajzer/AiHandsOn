@@ -3,16 +3,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddSingleton<AiHandsOn.Api.Services.IUserService, AiHandsOn.Api.Services.UserService>();
+builder.Services.AddSingleton<AiHandsOn.Api.Services.IUserServiceManual, AiHandsOn.Api.Services.UserServiceManual>();
+// Register validator
+builder.Services.AddSingleton<AiHandsOn.Api.Validation.IRegistrationValidator, AiHandsOn.Api.Validation.RegistrationValidator>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
 
 app.UseHttpsRedirection();
 
