@@ -33,6 +33,8 @@
    - **Debugging**: 
      > Analyze the following stack trace: [stack-trace]; explain why this error occurs in the context of my current file; provide me with step by step how to reproduce this issue; suggest a fix that follows best practices, SOLID principles and conventions.
      
+**3. Build minimal API with auth using Copilot**
+>Built using the following prompt: @workspace /new aspnetcore-api -n OrderManagement.Api. Include JWT Authentication setup, EF Core with an In-Memory database, and a basic 'Orders' controller. Use .NET 9 Primary Constructors and File-Scoped Namespaces.
 
 **4. Spec-Driven Development + Spec-Kit**
 
