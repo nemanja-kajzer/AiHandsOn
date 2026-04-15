@@ -69,6 +69,12 @@
 - **SubmitOrder_WithDuplicateKey_ReturnsConflict**
 
 **Prompt**: Using the specification above, generate a fully functional .NET 10 implementation. Include the Domain models, the API Controller, and a mock Repository.
+
+**5. Refactoring using Claude Code**
+**DIFFERENCES BETWEEN CLAUDE AND COPILOT**
+- Claude can support bigger context size and thus is more reliable and convenient for larger refactorings or architectural decisions because it can hold the whole solution in memory and is less likely to break dependencies
+- Copilot is good for small contexts, boilerplate code, narrowly scoped problems and for patterns it has seen
+
      
 
      
